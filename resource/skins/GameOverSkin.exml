@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameOverSkin" width="480" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="bg_jpg"/>
+	<e:Image source="bg_wenzi" x="83"/>
+	<e:Image source="shibai" y="85" x="150"/>
+	<e:Image source="zuigaojilu" x="286" y="245"/>
+	<e:Image source="fenshu" x="118" y="245"/>
+	<ns1:Counter id="score" height="30" y="280" scaleX="1" scaleY="1" horizontalCenter="-94.5"/>
+	<ns1:Counter id="max_number" height="30" y="280" scaleX="1" scaleY="1" horizontalCenter="98.5"/>
+	<e:Button id="btn_again" label="" x="131" y="361" name="再玩一次">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_y" source.down="btn_y"/>
+            <e:Image source="btn_zaiwan" source.down="btn_zaiwan" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_resume" label="重新开始" y="470" x="131" name="重新开始">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_b" source.down="btn_b"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="34" textColor="0x428203" bold="true" strokeColor="0xbcf86a" stroke="2"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>
